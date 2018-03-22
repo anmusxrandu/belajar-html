@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Menggunakan Media Pada HTML - anmusxrandu</title>
+</head>
+<body>
+
+<!-- menu web -->
+<ul>
+<!-- tag li digunakan untuk mendefinisikan list -->
+
+    <!-- kita lupa menambahkan list atau menu dari file index -->
+    <li><a href="index.html">Beranda</a></li>
+	<li><a href="peformatan-text.html" target="">Peformatan Text</a></li>
+<!-- tag a di gunakan untuk menghubungkan file 1 dengan yang lainya dan memiliki beberapa atribut seperti
+href    =  lokasi file dimana file itu disimpan kedalam direktori atau folder
+target  = untuk menentukan apakah file tersebut dibuka dengan halaman itu sendiri atau membuka di tab yang baru.
+pada contoh tersebut di definisikan bahwa file table dan form akan di buka pada halaman yang sama, sedangkan file media dan file peformatan text akan dibuka pada tab baru
+-->
+	<li><a href="table.html" target="">Tabel</a></li>
+	<li><a href="media.html" target="">Media</a></li>
+	<li><a href="form.html" title="">Form</a></li>
+</ul>
+<!-- akhir menu web -->
+
+<!-- Text -->
+<h1 align="center">BELAJAR MENGGUNAKAN MEDIA PADA HTML</h1>
+
+<!-- gambar -->
+
+<p>Gambar</p>
+
+<!--
+menggunakan tag img dan beberapa atribut penting yang sering digunakan seperti 
+src    = mencari file
+width  = lebar gambar
+height = tinggi gambar
+alt    = deskripsi gambar
+title  = judul gambar
+-->
+<img src="gambar.jpg" width="500" height="350" alt="Ini Gambar" title="Ini Adalah Gambar">
+
+<!-- Audio -->
+<p>Audio</p>
+
+
+<!-- 
+menggunakan tag audio dan tag source dan beberapa atribut penting yang sering di gunakan seperti
+width   = lebar audio
+height  = tinggi audio
+src     = lokasi audio
+dan controls untuk mengontrol audio
+-->
+<audio width="300" height="100" controls>
+	<source src="lagu.mp3" type="audio/mp3">
+</audio>
+
+
+
+<!-- Video -->
+<p>Video</p>
+
+<!-- 
+menggunakan tag video dan tag source dan beberapa atribut penting yang sering di gunakan seperti
+width   = lebar video
+height  = tinggi video
+src     = lokasi video
+dan controls untuk mengontrol video
+-->
+
+<video width="500" height="350" controls>
+<source src="up1.mp4" type="video/mp4">
+</video>
+
+<!-- youtube -->
+<p>Youtube</p>
+
+<!-- 
+menggunakan tag iframe dan beberapa atribut penting yang sering di gunakan seperti
+width   = lebar video
+height  = tinggi video
+src     = lokasi video
+allow   = untuk mengijinkan
+dan controls untuk mengontrol video
+oh ya, jika kalian mengambil video dari youtube maka kalian harus mengaktifkan koneksi internet kalian untuk mengaksesnya
+-->
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/C3hvwbro70g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/C3hvwbro70g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</body>
+</html>

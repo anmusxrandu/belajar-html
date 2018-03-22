@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title> Membuat Form Dengan HTML - anmusxrandu</title>
+</head>
+<body>
+
+<!-- menu web -->
+<ul>
+<!-- tag li digunakan untuk mendefinisikan list -->
+    <!-- kita lupa menambahkan list atau menu dari file index -->
+    <li><a href="index.html">Beranda</a></li>
+	<li><a href="peformatan-text.html" target="">Peformatan Text</a></li>
+<!-- tag a di gunakan untuk menghubungkan file 1 dengan yang lainya dan memiliki beberapa atribut seperti
+href    =  lokasi file dimana file itu disimpan kedalam direktori atau folder
+target  = untuk menentukan apakah file tersebut dibuka dengan halaman itu sendiri atau membuka di tab yang baru.
+pada contoh tersebut di definisikan bahwa file table dan form akan di buka pada halaman yang sama, sedangkan file media dan file peformatan text akan dibuka pada tab baru
+-->
+	<li><a href="table.html" target="">Tabel</a></li>
+	<li><a href="media.html" target="">Media</a></li>
+	<li><a href="form.html" title="">Form</a></li>
+</ul>
+<!-- akhir menu web -->
+
+<h1 align="center">Membuat Form Dengan HTML</h1>
+
+<!-- Menggunakan tag form -->
+
+<form>
+
+<!-- Input Form menggunakan tag input dan beberapa atribut yang sering di gunakan seperti
+type    	=  tipe dari form input, ada beberapa value dari atribut type seperti :
+		   text       = input form yang bertipe text
+		   password   = input form yang bertipe rahasia
+		   radio      = input form yang bertipe pilihan dengan radio
+		   checkbox   = input form yang bertipe pilihan dengan checkbox
+		   date       = input form yang bertipe tanggal
+name    	 =  nama dari form input
+placeholder  =  background berupa tulisan dari form input
+value        =  isi dari form input biasanya di pakai jika form input bertipe radio dan checkbox 
+-->
+<label for="nama">Nama &nbsp;&nbsp;&nbsp;&nbsp;: </label>
+<input type="text" name="nama" placeholder="Nama Lengkap">
+<br>
+<br>
+<label for="kelamin">Kelamin &nbsp;:</label>
+<input type="radio" name="kelamin" value="Laki-Laki">Laki-Laki
+&nbsp;
+<input type="radio" name="kelamin" value="Perempuan">Perempuan
+<br>
+<br>
+<label for="lahir">Lahir &nbsp;&nbsp;&nbsp;&nbsp;:</label>
+<input type="date" name="lahir">
+<br>
+<br>
+<!-- Input Form menggunakan tag textarea dan beberapa atribut yang sering di gunakan seperti
+name         =  nama dari form input
+placeholder  =  background berupa tulisan dari form input
+-->
+<label for="alamat">Alamat &nbsp;&nbsp;:</label>
+<textarea name="alamat" placeholder="Alamat Lengkap"></textarea>
+<br>
+<br>
+<!-- Input Form menggunakan tag select, tag option dan beberapa atribut yang sering di gunakan seperti 
+name         =  nama dari form input
+value		 =  isi dari form input
+-->
+<label for="jurusan">Jurusan&nbsp;&nbsp; :</label>
+<select name="jurusan">
+	<option value="RPL">RPL   ( Rekayasa Perangkat Lunak )</option>
+	<option value="TAV">TAV   ( Teknik Audio Video )</option>
+	<option value="TKR">TKR   ( Teknik Kendaraan Ringan )</option>
+	<option value="TSM">TSM   ( Teknik Sepeda Motor )</option>
+	<option value="TPMI">TPMI ( Teknik Pemeliharaan Mekanik Industri )</option>
+</select>
+<br>
+<br>
+
+<label for="ekstakulikuler">Ekstrakulikuler : </label>
+<br>
+<input type="checkbox" name="ekstra" value="Osis">Osis <br>
+<input type="checkbox" name="ekstra" value="Basket">Basket <br>
+<input type="checkbox" name="ekstra" value="Rohis">Rohis <br>
+<input type="checkbox" name="ekstra" value="Karate">Karate <br>
+<input type="checkbox" name="ekstra" value="Pks">Pks <br>
+<input type="checkbox" name="ekstra" value="Pmr">Pmr <br>
+
+</form>
+</body>
+</html>
